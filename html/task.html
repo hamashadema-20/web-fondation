@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Student Information Page</title>
+  </head>
+  <body>
+    <section>
+      <h1>Student Information Page</h1>
+      <p>
+        This page contains student information, courses, and a form for entering
+        student data.
+      </p>
+    </section>
+    <div>
+      <h2>Student Record</h2>
+      <table border="1">
+        <thead>
+          <tr>
+            <th colspan="4">Student Record</th>
+          </tr>
+          <tr>
+            <th>Name</th>
+            <th>Subjects</th>
+            <th>Marks</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td rowspan="2">Ali</td>
+            <td>HTML</td>
+            <td>90</td>
+            <td>Pass</td>
+          </tr>
+          <tr>
+            <td>Forms</td>
+            <td>85</td>
+            <td>Pass</td>
+          </tr>
+          <tr>
+            <th colspan="2">Average</th>
+            <td>87.5</td>
+            <td>Good</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+    </ul>
+    <ol>
+      <li>Create the HTML file</li>
+      <li>Write the page structure</li>
+      <li>Add the table</li>
+      <li>Add the lists</li>
+      <li>Add the form</li>
+      <li>Test in the browser</li>
+    </ol>
+    <p>Enter your student information:</p>
+    <form>
+      <div>
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" />
+      </div>
+      <br />
+      <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" />
+      </div>
+      <br />
+      <div>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" />
+      </div>
+      <br />
+      <div>
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male" />
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female" />
+        <label for="female">Female</label>
+      </div>
+      <br />
+      <div>
+        <label>Skills:</label>
+        <input type="checkbox" id="htmlSkill" name="skills" value="HTML" />
+        <label for="htmlSkill">HTML</label>
+        <input type="checkbox" id="cssSkill" name="skills" value="CSS" />
+        <label for="cssSkill">CSS</label>
+        <input type="checkbox" id="jsSkill" name="skills" value="JavaScript" />
+        <label for="jsSkill">JavaScript</label>
+      </div>
+      <br />
+      <div>
+        <label for="city">City:</label>
+        <select id="city" name="city">
+          <option value="">Select your city</option>
+          <option value="irbid">Irbid</option>
+          <option value="amman">Amman</option>
+          <option value="zarqa">Zarqa</option>
+          <option value="aqaba">Aqaba</option>
+        </select>
+      </div>
+      <br />
+      <div>
+        <label for="notes">Notes:</label>
+        <br />
+        <textarea id="notes" name="notes" rows="5" cols="40"></textarea>
+      </div>
+      <br />
+      <div>
+        <input type="submit" value="Submit" />
+        <input type="reset" value="Reset" />
+      </div>
+    </form>
+  </body>
+</html>

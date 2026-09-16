@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <h1>Student Registration Form</h1>
+    <p>Fill in your information to create an account.</p>
+
+    <form>
+      <div>
+        <label for="fullname">Full Name:</label>
+        <input
+          type="text"
+          id="fullname"
+          name="fullname"
+          placeholder="Enter your full name"
+        />
+      </div>
+      <br />
+      <div>
+        <label for="email">Email Address:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="example@email.com"
+        />
+      </div>
+      <br />
+      <div>
+        <label for="password">Password:</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="......."
+        />
+      </div>
+      <br />
+      <div>
+        <label for="birth">Date of Birth:</label>
+        <input type="date" id="birth" name="birth" />
+      </div>
+      <br />
+      <div>
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male" />
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female" />
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="gender" value="other" />
+        <label for="other">Other</label>
+      </div>
+      <br />
+
+      <div>
+        <label for="country">Country:</label>
+
+        <select id="country" name="country">
+          <option value="">Select your country</option>
+          <option value="jordan">Jordan</option>
+          <option value="palestine">Palestine</option>
+          <option value="egypt">Egypt</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <br />
+      <div>
+        <label>Favorite Subjects:</label>
+        <input type="checkbox" id="html" name="subjects" value="html" />
+        <label for="html">HTML</label>
+        <input type="checkbox" id="css" name="subjects" value="css" />
+        <label for="css">CSS</label>
+        <br />
+        <input
+          type="checkbox"
+          id="javascript"
+          name="subjects"
+          value="javascript"
+        />
+        <label for="javascript">JavaScript</label>
+        <input type="checkbox" id="database" name="subjects" value="database" />
+        <label for="database">Database</label>
+      </div>
+      <br />
+      <div>
+        <label for="profile">Profile Picture:</label>
+        <input type="file" id="profile" name="profile" />
+      </div>
+      <br />
+      <div>
+        <label for="color">Favorite Color:</label>
+        <input type="color" id="color" name="color" />
+      </div>
+      <br />
+      <div>
+        <label for="about">Tell Us About Yourself:</label>
+        <br />
+        <textarea
+          id="about"
+          name="about"
+          rows="5"
+          cols="50"
+          placeholder="Write a short bio..."
+        ></textarea>
+      </div>
+      <br />
+      <div>
+        <label for="skill">Your Skill Level:</label>
+        <input
+          type="range"
+          id="skill"
+          name="skill"
+          min="0"
+          max="100"
+          value="50"
+        />
+        <span>Beginner</span>
+      </div>
+      <br />
+      <div>
+        <label for="newsletter">Subscribe to Newsletter:</label>
+        <input type="checkbox" id="newsletter" name="newsletter" />
+        <label for="newsletter"> Yes, I want to receive updates and news</label>
+      </div>
+      <br />
+      <div>
+        <input type="submit" value="Register" />
+        <input type="reset" value="Reset" />
+      </div>
+    </form>
+  </body>
+</html>

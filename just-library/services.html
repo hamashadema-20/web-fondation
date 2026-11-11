@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Services & Booking - JUST Central Library</title>
+    <link rel="stylesheet" href="../just-library/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <a href="index.html" class="logo-container">
+        <img src="../just-library/images/pic-1.png" alt="JUST Logo" />
+        <span>JUST Central Library</span>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="catalog.html">Faculties & Catalog</a></li>
+          <li><a href="services.html" class="active">Services</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="dashboard.html">Borrow Dashboard</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <img
+        src="..//just-library/images/pic-4.png"
+        alt="Reading Hall Background"
+        class="hero-bg-img"
+      />
+
+      <span class="badge-tag">Student Support</span>
+      <h1>Library Services & Study Room Booking</h1>
+      <p class="desc">
+        Access electronic databases, reserve quiet group study rooms, and
+        utilize printing and scanning facilities.
+      </p>
+    </section>
+
+    <div class="container">
+      <h2 class="section-title">Core Library Services</h2>
+      <div class="services-grid">
+        <div class="service-card">
+          <h3>Digital Databases Access</h3>
+          <p>
+            Full access to global research engines including IEEE Xplore,
+            ScienceDirect, and Scopus for all registered JUST students.
+          </p>
+        </div>
+
+        <div class="service-card">
+          <h3>Group Study Rooms</h3>
+          <p>
+            Private study rooms equipped with whiteboards and display screens
+            for collaborative student projects and group study sessions.
+          </p>
+        </div>
+
+        <div class="service-card">
+          <h3>Printing & Scanning</h3>
+          <p>
+            High-speed printing, photocopying, and document scanning stations
+            available on Floor 1 and Floor 2 using your student ID card.
+          </p>
+        </div>
+      </div>
+
+      <h2 class="section-title">Reserve a Study Room</h2>
+
+      <div class="booking-container">
+        <form
+          action="#"
+          method="post"
+          onsubmit="
+            event.preventDefault();
+            alert('Study Room Reservation Request Submitted Successfully!');
+          "
+        >
+          <div class="form-group">
+            <label for="student-name">Full Student Name</label>
+            <input
+              type="text"
+              id="student-name"
+              placeholder="Enter your full name"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="student-id">JUST University ID</label>
+            <input
+              type="text"
+              id="student-id"
+              placeholder="e.g., 142560"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="room-type">Select Study Room</label>
+            <select id="room-type" required>
+              <option value="">-- Choose a Room --</option>
+              <option value="room-a">Room A1 (Floor 2 - Max 4 Students)</option>
+              <option value="room-b">Room B2 (Floor 2 - Max 6 Students)</option>
+              <option value="room-c">
+                Room C3 (Floor 3 - Quiet Area - Max 4 Students)
+              </option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="booking-date">Reservation Date</label>
+            <input type="date" id="booking-date" required />
+          </div>
+
+          <div class="form-group">
+            <label for="notes">Additional Request / Notes</label>
+            <textarea
+              id="notes"
+              rows="4"
+              placeholder="Any specific requirements..."
+            ></textarea>
+          </div>
+
+          <button type="submit" class="btn-submit">
+            Confirm Room Reservation
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-col">
+          <h3>JUST Central Library</h3>
+          <p>
+            Your trusted academic gateway for research, learning resources, and
+            student success at Jordan University of Science and Technology.
+          </p>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="catalog.html">Faculties & Catalog</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="dashboard.html">Borrow Dashboard</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact Info</h4>
+          <p>Email: library@just.edu.jo</p>
+          <p>Phone: +962 2 7201000</p>
+          <p>Location: Irbid, Jordan</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>
+          &copy; 2026 Jordan University of Science and Technology - JUST Central
+          Library. All rights reserved.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
